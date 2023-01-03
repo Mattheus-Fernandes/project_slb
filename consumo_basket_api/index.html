@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF Container Managment</title>
+
+    <link rel="stylesheet" href="stylizations/style.css">
+</head>
+<body>
+    
+    <div class="container-project">
+        <header class="header">
+            <span class="nameWeb">MF Container Managment</span>
+        </header>
+        <div class="appWebContent">
+            <div class="forms">
+                <form action="http://localhost:2022/basket" method="POST">
+                    <label class="area_label">Serial Number:</label>
+                    <input data-id class="area_input" type="text" name="serial_number" placeholder="Type the serial number">
+                    <label class="area_label">Is this basket available?</label>
+                    <input class="area_input" type="text" name="basketState" placeholder="(Y) - Yes or (N) - No">
+                    <button id="btnReload" class="save_basket" type="submit">Save Basket</button>
+                
+                </form>
+
+                <div class="paper_certification">
+                    <h3 class="donwCertificate">Download certifications</h3>
+                    <nav class="navbar">
+                        <ul>
+                            <li>
+                                <a href="">SWIRE</a>
+                            </li>
+                            <li>
+                                <a href="">O&G</a>
+                            </li>
+                            <li>
+                                <a href="">TIGER</a>
+                            </li>
+                            <li>
+                                <a href="https://www.hades-ofp.com/" target="_blank">HADES</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <h3 class="passSuppliers">Password of suppliers</h3>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <div class="basketAvailable">
+                    <h1 class="basket_situation">These baskets are available</h1>
+                    <ul id="allBasketsAvailable">
+                    </ul>
+                </div>
+                <div class="basketSegregated">
+                    <h1 class="basket_situation">These baskets are segregateds</h1>
+                    <ul id="allBasketSegregated">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./script/main.js"></script>
+</html>

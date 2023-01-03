@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container-project {
+    background-image: url('https://img.freepik.com/fotos-premium/patio-de-conteiner-industrial-para-negocios-de-logistica-de-importacao-e-exportacao_38076-1281.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header {
+    background-color: black;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.nameWeb {
+    font-size: 55px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.appWebContent {
+    padding: 30px 0;
+    margin: 0 137px;
+    height: auto;
+    display: flex;
+}
+
+/*
+* This part is of the forms for save the situation of baskets
+*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+
+    width: 65%;
+    height: 70%;
+
+    background-color: black;
+    color: white;
+
+    border-radius: 10px;
+    padding: 15px;
+    margin-left: 11.9%;
+}
+
+.forms {
+   height: 70%;
+   width: 21%;
+   background-color: black;
+   color: white;
+   padding: 15px;
+   border-radius: 10px;
+}
+
+.forms .area_label {
+    display: block;
+    font-size: 22px;
+}
+
+.forms .area_input {
+    outline: none;
+    padding: 3px;
+    width: 100%;
+    font-size: 17px;
+    margin: 7px 0;
+}
+
+.forms .save_basket {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.forms .paper_certification {
+    margin-top: 50px;
+}
+
+.forms .paper_certification .donwCertificate {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.forms .paper_certification .navbar ul li {
+    margin-bottom: 10px;
+}
+
+.forms .paper_certification .navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.forms .paper_certification .passSuppliers {
+    font-size: 22px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/*
+* This part is of where the baskets are find that show the your actual situation
+*/
+
+.basket_situation {
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+#allBasketsAvailable, 
+#allBasketSegregated {
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    color: black;
+
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 70%;
+    height: auto;
+}
+
+
+#allBasketsAvailable .basket {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin: 0 5px 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#allBasketsAvailable .basket .serial_number {
+    background-color: rgb(56, 176, 56);
+    padding: 0 3px;
+    border-radius: 4px;
+    font-weight: 100;
+}
+
+#allBasketSegregated .basket {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin: 0 5px 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#allBasketSegregated .basket .serial_number {
+    background-color: rgba(234, 14, 14, 0.768);
+    padding: 0 3px;
+    border-radius: 4px;
+    font-weight: 100;
+}
+
+
+.btnDelete,
+.btnUpdate {
+    background-color: black;
+    color: white;
+    margin: 0 10px;
+    padding: 2px;
+    border-radius: 4px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+
+
+
+@media(max-width: 600px) {
+
+    .container-project {
+        height: auto;
+    }
+
+    .appWebContent {
+        flex-direction: column;
+        margin: 0 50px;
+    }
+
+    .forms {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .paper_certification {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        margin:  0 auto;
+    }
+
+    #allBasketsAvailable, 
+    #allBasketSegregated  {
+        display: block;
+    }
+
+}
