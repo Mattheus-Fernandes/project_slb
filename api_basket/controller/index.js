@@ -22,7 +22,7 @@ function postBasket(req, res) {
         ModelBasketAvailable.create({
             basket: serialNumber,
             basketState: basketState
-        }).then(()=> res.redirect('http://127.0.0.1:5500/consumo_basket_api/index.html'))
+        }).then(()=> res.redirect('https://front-project-slb.onrender.com/'))
     
 }
 
