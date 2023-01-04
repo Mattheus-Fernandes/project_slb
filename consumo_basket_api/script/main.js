@@ -2,7 +2,7 @@ const allBasketsAvailable = document.getElementById('allBasketsAvailable')
 const allBasketsSegregated = document.getElementById('allBasketSegregated')
 
 
-axios.get('https://front-project-slb.onrender.com')
+axios.get('https://front-project-slb.onrender.com/basket')
     .then(baskets => {
         
         const responseBaskets = baskets.data.basketAvailable
@@ -58,7 +58,7 @@ axios.get('https://front-project-slb.onrender.com')
                     location.reload()
                 }, 1000)
                 
-                axios.delete('https://front-project-slb.onrender.com' + id)
+                axios.delete('https://front-project-slb.onrender.com/basket' + id)
                 
                 
             })
@@ -76,7 +76,7 @@ axios.get('https://front-project-slb.onrender.com')
                     location.reload()
                 }, 1000)
                 
-                axios.patch('https://front-project-slb.onrender.com' + id)
+                axios.patch('https://front-project-slb.onrender.com/basket' + id)
         
                     
             })
