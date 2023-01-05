@@ -211,7 +211,11 @@
         display: block;
     }
     
+    #allBasketsAvailable .basket {
+        flex-direction: flex-column;
+    }
+    
     .btnDelete{
-        margin: 5px;   
+        margin: 5px 0;   
     }
 }
