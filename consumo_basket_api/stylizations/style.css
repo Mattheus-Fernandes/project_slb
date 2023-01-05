@@ -205,11 +205,6 @@
         width: 100%;
         margin:  0 auto;
     }
-
-    #allBasketsAvailable, 
-    #allBasketSegregated  {
-        display: block;
-    }
     
     #allBasketsAvailable .basket {
         flex-direction: flex-column;
