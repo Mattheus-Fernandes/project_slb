@@ -206,8 +206,9 @@
         margin:  0 auto;
     }
     
-    #allBasketsAvailable .basket {
-        flex-direction: flex-column;
+    .basket {
+        display: flex;
+        flex-direction: column;
     }
     
     .btnDelete{
