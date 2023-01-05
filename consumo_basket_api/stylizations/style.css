@@ -210,5 +210,8 @@
     #allBasketSegregated  {
         display: block;
     }
-
+    
+    .btnDelete{
+        margin: 5px;   
+    }
 }
