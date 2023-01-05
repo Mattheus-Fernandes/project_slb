@@ -58,7 +58,7 @@ axios.get('https://front-project-slb.onrender.com/basket')
                     location.reload()
                 }, 1000)
                 
-                axios.delete('https://project-slb.onrender.com/basket' + id)
+                axios.delete('https://project-slb.onrender.com/basket/' + id)
                 
                 
             })
@@ -76,7 +76,7 @@ axios.get('https://front-project-slb.onrender.com/basket')
                     location.reload()
                 }, 1000)
                 
-                axios.patch('https://project-slb.onrender.com/basket' + id)
+                axios.patch('https://project-slb.onrender.com/basket/' + id)
         
                     
             })
