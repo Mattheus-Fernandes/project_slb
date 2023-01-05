@@ -2,7 +2,7 @@ const allBasketsAvailable = document.getElementById('allBasketsAvailable')
 const allBasketsSegregated = document.getElementById('allBasketSegregated')
 
 
-axios.get('https://front-project-slb.onrender.com/basket')
+axios.get('https://project-slb.onrender.com/basket')
     .then(baskets => {
         
         const responseBaskets = baskets.data.basketAvailable
